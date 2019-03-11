@@ -51,6 +51,7 @@ export default {
         outline: none;
         font-family: 'Merienda', cursive;
         font-size: 1rem;
+        line-height: 2;
         padding: 0 0.5em;
         border: 1px solid rgb(11, 122, 76);
     }
@@ -72,6 +73,7 @@ export default {
 
     input[type="submit"]:active {
         transform: scale(0.9);
+        outline: none;
         background: rgba(11, 122, 76, 0.726);
     }
 </style>

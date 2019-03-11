@@ -1,21 +1,35 @@
 <template>
-    <div class="todobox">
-        <div v-bind:key="todo.id" v-for="todo in todos">
-                <TodoItem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo.id)"/>
-        </div>
-    </div>
+    <div>
+        <input type="text" class="todo-input" placeholder="What needs to be done" v-model="newTodo">		
+	</div>
 </template>
 
 <script>
-import TodoItem from './TodoItem.vue';
-
-    export default {
-        name: 'TodoBox',
-        components: {
-        TodoItem
-        },
-        props: ["todos"] 
+export default {
+    name: "todo-list",
+    data() {
+        return {
+            newTodo: '',
+            todos: [
+                {
+                    'id': 1,
+                    'title': 'Finish Vue Screencast',
+                    'completed': false,
+                },
+                {
+                    'id': 2,
+                    'title': 'Take over world',
+                    'completed': true,
+                },
+                {
+                    'id': 3,
+                    'title': 'Nothing',
+                    'completed': false,
+                },
+            ]
+        }
     }
+}
 </script>
 
 <style lang="scss" scoped>
