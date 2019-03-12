@@ -76,6 +76,7 @@ export default {
     font-size: 15px; 
     line-height: 2;
     padding: 5px; 
+    border: 1px solid rgb(11, 122, 76);
     outline: none;
     width: 100%;
   }
