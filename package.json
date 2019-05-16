@@ -1,12 +1,15 @@
 {
-  "name": "todo",
+  "name": "to-do-list",
+  "homepage": "https://github.com/karolina-suchomska/To-Do-List",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
+  "wst": "/dist",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
@@ -23,6 +26,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
