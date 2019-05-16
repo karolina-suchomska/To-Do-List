@@ -14,8 +14,9 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
     h1 {
-        font-size: 3rem;
+        font-size: calc(30px + 1.5vw);
         font-family: 'Permanent Marker', cursive;
-        color: rgb(11, 122, 76);
+        color: rgba(59, 110, 168, 0.945);
+        text-align: center;
     }
 </style>

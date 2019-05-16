@@ -25,16 +25,16 @@ export default {
 
 body {
     display: flex;
-    color: #333;
+    color: rgb(14, 14, 14);
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, rgb(214, 255, 231), rgb(102, 238, 143));
+    background-image: linear-gradient(to bottom right, rgb(214, 255, 231), rgba(59, 110, 168, 0.664));
     background-attachment: fixed;
 }
 
 #app {
-    text-align: center;
+    text-align: left;
     margin: auto;
     padding: 1rem; 
     width: 100%;

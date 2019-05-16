@@ -7,7 +7,7 @@
         <span :class="{ complete: todo.complete }">
         {{ todo.title }} 
         </span>
-      </div>
+        </div>
       <div class="delete" @click="deleteTodo(index)">
         &times;
       </div>
@@ -59,39 +59,48 @@ export default {
 </script>
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css?family=Merienda');
+ @import url('https://fonts.googleapis.com/css?family=Lato');
 
   .todolist {
-    background: white;
-    border-radius: 20px;
-    font-family: 'Merienda', cursive;
-    font-size: 20px;   
-    padding: 16px 16px 0 16px;
+    background: rgb(255, 255, 255);
+    padding: 16px 16px 10px 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(8px + 1.3vw);   
+    border-radius: 10px;
   }
 
   .todoinput {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Merienda', cursive; 
-    font-size: 15px; 
-    line-height: 2;
     padding: 5px; 
-    border: 1px solid rgb(11, 122, 76);
+    font-family: 'Lato', sans-serif; 
+    font-size: calc(8px + 1.3vw);
+    border: 1px solid rgba(59, 110, 168, 0.664);
+    line-height: 2;
     outline: none;
-    width: 100%;
   }
 
   .todoinput:focus {
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow: inset 0 0 10px #00000091;
+    -moz-box-shadow:    inset 0 0 2px rgba(59, 110, 168, 0.664);
+    -webkit-box-shadow: inset 0 0 2px rgba(59, 110, 168, 0.664);
+    box-shadow: inset 0 0 2px rgba(59, 110, 168, 0.664);
   }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+    margin: 8px;
+  }
+  
 
   .todoitem {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(102, 238, 143, 0.644);
+    border-bottom: 1px solid rgba(59, 110, 168, 0.664);
     padding: 10px 10px;
+    word-wrap: break-word;
+    text-align: left;
+    line-height: 1.5;
   }
 
   .complete {
@@ -101,11 +110,15 @@ export default {
   .delete {
     outline: none;
     padding: 0 8px;
+    display: table-cell;
+    vertical-align: baseline;
   }
 
   .delete:hover {
-    background: rgba(255, 0, 0, 0.24);
+    color: rgb(143, 11, 11);
     border-radius: 50px;
+    display: table-cell;
+    vertical-align: middle;
     cursor: pointer;
   }
 </style>
