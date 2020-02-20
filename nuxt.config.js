@@ -5,7 +5,7 @@ export default {
     htmlAttrs: {
       lang: 'pl'
     },
-    title: 'store',
+    title: 'To-Do-List',
     meta: [
       {
         charset: 'utf-8'
@@ -21,7 +21,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'store'
+        content: 'to-do-list'
       }
     ],
     link: [
@@ -43,6 +43,9 @@ export default {
         type: 'image/png'
       }
     ]
+  },
+  router: {
+    base: '/To-Do-List/'
   },
   css: [
     '@/assets/sass/main.scss'
