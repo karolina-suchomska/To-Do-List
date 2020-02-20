@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+@page {
+  margin: 10px auto;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 40px;
+  background-image: linear-gradient(to bottom right, rgb(214, 255, 231), rgba(59, 110, 168, 0.664));
+  background-attachment: fixed;
+  color: rgb(14, 14, 14);
+  font-family: 'Lato', sans-serif;
+  font-size: calc(8px + 1.3vw);
+}
+
+.app {
+  text-align: left;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 640px;
+}

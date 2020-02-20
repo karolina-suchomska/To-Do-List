@@ -1,56 +1,33 @@
 {
-  "name": "to-do-list",
-  "homepage": "https://github.com/karolina-suchomska/To-Do-List",
-  "version": "0.1.0",
+  "name": "To-Do-List",
+  "version": "1.0.0",
+  "description": "It is a list of things to do",
+  "author": "Karolina",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js --branch gh-pages"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
-  "wst": "/dist",
   "dependencies": {
-    "axios": "^0.18.0",
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "uuid": "^3.3.2",
-    "vue": "^2.6.6",
-    "vue-axios": "^2.1.4"
+    "nuxt": "^2.11.0",
+    "@nuxtjs/axios": "^5.9.3",
+    "@nuxtjs/pwa": "^3.0.0-beta.19",
+    "cross-env": "^5.2.1",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.0",
-    "@vue/cli-plugin-eslint": "^3.5.0",
-    "@vue/cli-service": "^3.5.0",
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-gh-pages": "^1.19.0",
-    "vue-template-compiler": "^2.5.21"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "eslint": "^6.8.0",
+    "eslint-plugin-nuxt": "^0.5.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4",
+    "sass-loader": "^7.3.1",
+    "vue-select": "^3.4.0"
+  }
 }
