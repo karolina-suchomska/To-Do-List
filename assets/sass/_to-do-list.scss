@@ -41,6 +41,17 @@
 
   .complete {
     text-decoration: line-through;
+    animation-name: delay;
+    animation-duration: .3s;
+  }
+
+  @keyframes delay {
+    0% {
+      text-decoration: none;
+    }
+    100% {
+      text-decoration: line-through;
+    }
   }
 
   .delete {

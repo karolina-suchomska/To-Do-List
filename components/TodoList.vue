@@ -2,10 +2,10 @@
   <div class="to-do-list">
     <input
       v-model="newTodo"
+      @keyup.enter="addTodo"
       type="text"
       class="to-do-input"
       placeholder="What needs to be done"
-      @keyup.enter="addTodo"
     >
     <div
       v-for="(todo, index) in todos"
@@ -28,8 +28,8 @@
         </label>
       </div>
       <div
-        class="delete"
         @click="deleteTodo(index)"
+        class="delete"
       >
         &times;
       </div>
