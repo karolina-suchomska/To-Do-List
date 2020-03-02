@@ -12,16 +12,20 @@
       :key="todo.id"
       class="to-do-item"
     >
-      <div>
+      <div class="checkbox-container">
         <input
-          v-model="todo.complete"
+          :id="'checkbox' + index"
+          v-model="todo.completed"
           type="checkbox"
+          class="checkbox-input"
         >
-        <span
-          :class="{ complete: todo.complete }"
+        <label
+          :for="'checkbox' + index"
+          :class="todo.completed ? 'complete' : ''"
+          class="checkbox-label"
         >
           {{ todo.title }}
-        </span>
+        </label>
       </div>
       <div
         class="delete"
